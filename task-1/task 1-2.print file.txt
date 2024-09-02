@@ -1,0 +1,24 @@
+root@RENWICK:~# pwd
+/root
+root@RENWICK:~# mkdir random
+root@RENWICK:~# cd random
+root@RENWICK:~/random# touch account{1..20}.text
+root@RENWICK:~/random# ls
+account1.text   account12.text  account15.text  account18.text  account20.text  account5.text  account8.text
+account10.text  account13.text  account16.text  account19.text  account3.text   account6.text  account9.text
+account11.text  account14.text  account17.text  account2.text   account4.text   account7.text
+root@RENWICK:~/random# mv *account1.txt* *account1.yml
+mv: cannot stat '*account1.txt*': No such file or directory
+root@RENWICK:~/random# mv *account1.text* *account1.yml
+root@RENWICK:~/random# mv *account2.text* *account2.yml
+root@RENWICK:~/random# mv *account3.text* *account3.yml
+root@RENWICK:~/random# mv *account4.text* *account4.yml
+root@RENWICK:~/random# mv *account5.text* *account5.yml
+root@RENWICK:~/random# ls
+'*account1.yml'  '*account4.yml'   account11.text   account14.text   account17.text   account20.text   account8.text
+'*account2.yml'  '*account5.yml'   account12.text   account15.text   account18.text   account6.text    account9.text
+'*account3.yml'   account10.text   account13.text   account16.text   account19.text   account7.text
+root@RENWICK:~/random# rm account{6..20}.text
+root@RENWICK:~/random# ls
+'*account1.yml'  '*account2.yml'  '*account3.yml'  '*account4.yml'  '*account5.yml'
+root@RENWICK:~/random#

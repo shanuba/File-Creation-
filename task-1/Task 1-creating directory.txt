@@ -1,0 +1,28 @@
+root@RENWICK:~# pwd
+/root
+root@RENWICK:~# mkdir my_folder
+root@RENWICK:~# cd my_folder
+root@RENWICK:~/my_folder# cat my_file.txt
+cat: my_file.txt: No such file or directory
+root@RENWICK:~/my_folder# touch my_file.txt
+root@RENWICK:~/my_folder# vim my_file.txt
+root@RENWICK:~/my_folder# ls
+my_file.txt
+root@RENWICK:~/my_folder# cat my_file.txt
+hello this is my first file
+root@RENWICK:~/my_folder# touch another_file.txt
+root@RENWICK:~/my_folder# vim another_file.txt
+root@RENWICK:~/my_folder# cat  another_file.txt
+hello this is my second file
+root@RENWICK:~/my_folder# cat another_file.txt > my_file
+root@RENWICK:~/my_folder# cat another_file.txt > my_file.txt
+root@RENWICK:~/my_folder# cat my_file.txt
+hello this is my second file
+root@RENWICK:~/my_folder# ls -l
+total 12
+-rw-r--r-- 1 root root 29 Sep  2 16:00 another_file.txt
+-rw-r--r-- 1 root root 29 Sep  2 16:01 my_file
+-rw-r--r-- 1 root root 29 Sep  2 16:02 my_file.txt
+root@RENWICK:~/my_folder# pwd
+/root/my_folder
+root@RENWICK:~/my_folder#
